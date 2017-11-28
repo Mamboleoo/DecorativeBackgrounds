@@ -1,0 +1,54 @@
+@font-face {
+	font-family: 'nexa_boldregular';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.eot');
+	src: url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.woff2') format('woff2'), url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.woff') format('woff'), url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.ttf') format('truetype'), url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
+}
+
+.demo-4 {
+	--color-text: #fff;
+	--color-bg: #101010;
+	--color-link: #fe0e55;
+	--color-link-hover: #fff;
+	--color-info: #333;
+	--color-title: #fff;
+	--color-subtitle: #fff;
+	--color-subtitle-bg: #fe0e55;
+	background: var(--color-bg) url(../img/X.svg) no-repeat 50% 50%;
+	background-size: 50%;
+}
+
+.content__title {
+	font-family: 'nexa_boldregular', sans-serif;
+	font-size: 10vw;
+	font-weight: normal;
+	color: var(--color-title);
+	text-align: center;
+	margin: 0;
+	pointer-events: none;
+}
+
+.content__subtitle {
+	font-size: 1.25em;
+	color: var(--color-subtitle);
+	padding: 0 0.75em;
+	margin: 0;
+	letter-spacing: 0.5em;
+	text-indent: 0.5em;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 55em) {
+	.content__title {
+		font-size: 3.5em;
+	}
+	.content__subtitle {
+		font-size: 0.85em;
+	}
+	.demo-4 {
+		background-position: 50% 20em;	
+	}
+}

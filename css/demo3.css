@@ -1,0 +1,47 @@
+.demo-3 {
+	--color-text: #fff;
+	--color-bg: #A9E7DA;
+	--color-link: #523bdc;
+	--color-link-hover: #fff;
+	--color-title: #fff;
+}
+
+.content__title {
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: -0.025em;
+	font-size: 7vw;
+	color: var(--color-title);
+	line-height: 1;
+	margin: 0;
+	position: relative;
+}
+
+.content__title::before,
+.content__title::after {
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 200px;
+	background: url(../img/dot.png);
+	background-size: 25px;
+	opacity: 0.4;
+}
+
+.content__title::before {
+	top: 120%;
+	right: 81%;
+}
+
+.content__title::after {
+	bottom: 120%;
+	left: 81%;
+}
+
+@media screen and (max-width: 55em) {
+	.content__title::before,
+	.content__title::after {
+		width: 50px;
+		height: 100px;
+		background-size: 12px;
+	}
+}

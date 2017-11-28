@@ -1,0 +1,105 @@
+.pater {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !important;
+	position: fixed;
+	z-index: 1000;
+	right: 0;
+	bottom: 0;
+	display: grid;
+	width: 100%;
+	padding: 1em 0;
+	text-align: left;
+	color: #fff;
+	background: #000;
+}
+
+.pater:hover, .pater:focus {
+	color: #fff;
+}
+
+.pater::before {
+	content: 'Our Sponsor';
+	font-size: 0.75em;
+	display: inline-block;
+	padding: 0 0 5px 10px;
+	vertical-align: middle;
+	z-index: 11;
+}
+
+.pater__img {
+	display: none;
+	background-image: url(TLD.png);
+	background-size: cover;
+}
+
+.pater__title {
+	font-size: 0.85em;
+	font-weight: normal;
+	font-weight: bold;
+	margin: 0;
+}
+
+.pater__title,
+.pater__description {
+	padding: 10px 0 0 10px;
+}
+
+.pater__description {
+	font-size: 0.85em;
+	display: none;
+	margin: 0;
+	opacity: 0;
+}
+
+@media screen and (min-width: 60em) {
+	.pater {
+		top: 0;
+		right: 0;
+		bottom: auto;
+		width: 220px;
+		margin: 0 1.5em 0 0;
+		padding: 0;
+	}
+	.pater__img {
+		display: block;
+		width: 100%;
+		position: relative;
+		z-index: 10;
+	}
+	.pater::before {
+		display: block;
+		padding: 8px;
+		position: absolute;
+		color: #aaa;
+	}
+	.pater__description {
+		display: block;
+		position: absolute;
+		top: 150px;
+		padding: 1em;
+		opacity: 1;
+		transform: translate3d(0,-100%,0);
+		transition: transform 0.3s;
+	}
+	.pater:hover .pater__description {
+		transform: translate3d(0,0,0);
+	}
+	.pater__title {
+		padding: 1em;
+		font-size: 0.85em;
+		font-weight: 700;
+		transition: opacity 0.5s;
+	}
+	.pater:hover .pater__title {
+		opacity: 0;
+	}
+	.pater__description,
+	.pater__title {
+		background: var(--bg-ad);
+	}
+	.demo-1 { --bg-ad: #171616; }
+	.demo-2 { --bg-ad: #0f2e5c; }
+	.demo-3 { --bg-ad: #4a8c98; }
+	.demo-4 { --bg-ad: #000; }
+	.demo-5 { --bg-ad: #000; }
+	.demo-6 { --bg-ad: #171616; }
+}

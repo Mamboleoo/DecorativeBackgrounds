@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'nexa_boldregular';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.eot');
+	src: url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.woff2') format('woff2'), url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.woff') format('woff'), url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.ttf') format('truetype'), url('../fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
+}
+
+.demo-2 {
+	--color-text: #fff;
+    --color-bg: #59c384;
+    --color-link: #0f2e5c;
+    --color-link-hover: #fff;
+    --color-title: #fff;
+	--color-subtitle: #0f2e5c;
+}
+
+.content__title {
+	font-size: 7vw;
+	font-weight: 700;
+	color: var(--color-title);
+	text-align: center;
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	font-family: 'nexa_boldregular', sans-serif;
+}
+
+.content__subtitle {
+	color: var(--color-subtitle);
+	padding: 0 0.75em;
+	margin: 0;
+	letter-spacing: 0.5em;
+	text-indent: 0.5em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 55em) {
+	.content--fixed {
+		background: #acb2b9;
+	}
+	.content__title {
+		font-size: 2em;
+	}
+	.content__subtitle {
+		font-size: 0.85em;
+	}
+}

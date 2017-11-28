@@ -1,0 +1,62 @@
+.demo-6 {
+	--color-text: #fff;
+	--color-bg: #191919;
+	--color-link: #3F51B5;
+	--color-link-hover: #ffffff;
+	--color-title: #fff;
+	--color-subtitle: #fff;
+}
+
+.content__title {
+	font-family: 'Vidaloka', serif;
+	font-size: 10vw;
+	font-weight: normal;
+	color: var(--color-title);
+	text-align: center;
+	margin: 0;
+	pointer-events: none;
+	line-height: 1;
+}
+
+.content__subtitle {
+	font-size: 1.25em;
+	color: var(--color-subtitle);
+	padding: 0 0.75em;
+	margin: 0;
+	letter-spacing: 0.5em;
+	text-indent: 0.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.content__subtitle::before,
+.content__subtitle::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	height: 1px;
+	background: var(--color-subtitle);
+	width: 20%;
+}
+
+.content__subtitle::before {
+	right: 100%;
+}
+
+.content__subtitle::after {
+	left: 100%;
+}
+
+@media screen and (max-width: 55em) {
+	.content__title {
+		font-size: 3.75em;
+	}
+	.content__subtitle {
+		font-size: 0.85em;
+	}
+	.content__subtitle::before,
+	.content__subtitle::after {
+		width: 10%;
+	}
+}

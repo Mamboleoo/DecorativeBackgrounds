@@ -1,0 +1,41 @@
+.demo-5 {
+	--color-text: #fff;
+	--color-bg: #0F1617;
+	--color-link: #4dc4a8;
+	--color-link-hover: #333;
+	--color-info: #ac1122;
+	--color-title: #fff;
+	--color-subtitle: #fff;
+    --color-subtitle-bg: #4dc4a8;
+}
+
+.content__title {
+	font-size: 10vw;
+	font-weight: normal;
+	color: var(--color-title);
+	text-align: center;
+	margin: 0;
+	pointer-events: none;
+}
+
+.content__subtitle {
+	font-size: 1.25em;
+	background: var(--color-subtitle-bg);
+	color: var(--color-subtitle);
+	padding: 0.45em 0.5em;
+	line-height: 1;
+	margin: 0;
+	letter-spacing: 0.5em;
+	text-indent: 0.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 55em) {
+	.content__title {
+		font-size: 3.5em;
+	}
+	.content__subtitle {
+		font-size: 0.85em;
+	}
+}
