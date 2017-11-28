@@ -15,7 +15,7 @@
 	--color-title: #fff;
 	--color-subtitle: #fff;
 	--color-subtitle-bg: #fe0e55;
-	background: var(--color-bg) url(../img/X.svg) no-repeat 50% 50%;
+	background: #101010 url(../img/X.svg) no-repeat 50% 50%;
 	background-size: 50%;
 }
 

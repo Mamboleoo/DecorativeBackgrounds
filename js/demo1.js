@@ -188,8 +188,8 @@ function onResize() {
 var mouse = new THREE.Vector2(-100,-100);
 function onMouseMove(e) {
     var canvasBounding = canvas.getBoundingClientRect();
-    mouse.x = ((e.clientX - canvasBounding.x) / width) * 2 - 1;
-    mouse.y = -((e.clientY - canvasBounding.y) / height) * 2 + 1;
+    mouse.x = ((e.clientX - canvasBounding.left) / width) * 2 - 1;
+    mouse.y = -((e.clientY - canvasBounding.top) / height) * 2 + 1;
 }
 
 TweenMax.ticker.addEventListener("tick", render);
